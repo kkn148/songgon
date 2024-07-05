@@ -1,0 +1,400 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Desa Songgon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Opsional: Tambahkan offset untuk compensasi navigasi bar */
+        /* body { scroll-padding-top: 80px; } */
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+
+                <div class="logo">
+                    <h1>Produk Desa Songgon</h1>
+                </div>
+
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="../index.html">Kembali</a></li>
+                        <li><a href="#categories">Produk Olahan</a></li>
+                        <li><a href="#populer">Produk Mentahan</a></li>
+                        <li><a href="#petani">Tentang Produk Desa</a></li>
+                    </ul>
+                </nav>
+
+                <img src="images/cart.png" alt="cart logo" id="cart">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <h1>Harga Murah Bukan <br> Berarti Murahan </h1>
+                    <p>Desa songgon merupakan desa penghasil durian<br>Komoditas disini sangat terkenal akan
+                        olahan<br>makanan dan buah durian</p>
+                    <a href="" class="btn">Belanja Sekarang &#10147;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/maintoko.png" alt="Banner">
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------- featured categories ---------------->
+    <div class="categories" id="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/duriandurihitam.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/eskrimdurian.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/tepungdurian.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------- featured products ---------------->
+
+    <div class="small-container" id="populer">
+        <h2 class="title">Produk Paling Populer</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/durian.png">
+                <h4>Durian</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p><strong>RP. 30.000 ~ 150.000</strong></p>
+            </div>
+            <div class="col-4">
+                <img src="images/eskrimdurian.png">
+                <h4>Es Krim Durian</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p><strong>RP. 5.000 ~ 15.000</strong></p>
+            </div>
+            <div class="col-4">
+                <img src="images/tepungdurian.png">
+                <h4>Tepung Durian</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p><strong>RP. 12.000 ~ 20.000</strong></p>
+            </div>
+            <div class="col-4">
+                <img src="images/frozendurian.png">
+                <h4>Frozen Durian</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p><strong>RP. 50.000 ~ 150.000</strong></p>
+            </div>
+        </div>
+
+        <h2 class="title">Produk Baru di Desa Songgon</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/kripikpisang.png">
+                <h4>Kripik Pisang</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p><strong>RP. 10.000 ~ 20.000</strong></p>
+            </div>
+            <div class="col-4">
+                <img src="images/kelapa.png">
+                <h4>Kelapa</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p><strong>RP. 3.000 ~ 10.000</strong></p>
+            </div>
+            <div class="col-4">
+                <img src="images/manggis.png">
+                <h4>Manggis</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p><strong>RP. 5.000 ~ 20.000</strong></p>
+            </div>
+            <div class="col-4">
+                <img src="images/bubukkopi.png">
+                <h4>Bubuk Kopi</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p><strong>RP. 10.000 ~ 50.000</strong></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/tepungporang.png">
+                <h4>Tepung Porang</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p><strong>RP. 10.000 ~ 30.000</strong></p>
+            </div>
+            <div class="col-4">
+                <img src="images/pepaya.png">
+                <h4>Pepaya</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p><strong>RP. 5.000 ~ 15.000</strong></p>
+            </div>
+            <div class="col-4">
+                <img src="images/teh.png">
+                <h4>Teh Khas Songgon</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p><strong>RP. 5.000 ~ 15.000</strong></p>
+            </div>
+            <div class="col-4">
+                <img src="images/gulamerah.png">
+                <h4>Gula Merah</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p><strong>RP. 10.000 ~ 20.000</strong></p>
+            </div>
+        </div>
+    </div>
+    <!------------------ offer ------------->
+
+    <div class="offer" id="petani">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/petani.png" class="offer-image">
+                </div>
+                <div class="col-2">
+                    <p>Belanja sekarang, gratis ongkir</p>
+                    <h1>Ayo bikin petani bahagia,</h1>
+                    <small>Produk Songgon dijamin halal karena pembuatan dan prosesnya telah diawasi oleh desa dan pihak
+                        tertentu
+                    </small><br>
+                    <a href="" class="btn">Buy Now &#10141;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------testimonial -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p style="font-size: 12px; text-align:justify;
+                    margin: 12px 0;
+                    color: #777;">Songgon merupakan desa dibawah kaki gunung ijen, disini banyak sekali
+                        olahan durian dan hasil budidaya pisang, buah-buahan disini memiliki banyak sekali ragam jenis.
+                        Menurut saya durian songgon memiliki rasa yang khas dan berbobot.</p>
+
+                    <img src="images/user-1.png">
+                    <h3>Sahda</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p style="font-size: 12px; text-align:justify;
+                    margin: 12px 0;
+                    color: #777;">Durian songgon merupakan durian terkenal di jawa timur, saya datang
+                        jauh-jauh dari Surabaya hanya untuk mencari durian songgon. Untuk harga durian disini
+                        cukup murah dari pada durian yang ada di surabaya, saya suka durian songgon.</p>
+
+                    <img src="images/user-2.png">
+                    <h3>Saddam</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p style="font-size: 12px; text-align:justify;
+                    margin: 12px 0;
+                    color: #777;">Temapt wisata di desa songgon sanagat banyak dan menarik
+                        saya suka berkunjung di Green Gemuk Candi dan menikmati suasana sunset di batu hitam.
+                        setelah pulang saya mencoba membeli tepung biji durian dan tepungnya enak sekali.</p>
+
+                    <img src="images/user-3.png">
+                    <h3>Ira Shovi</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------brands----------- -->
+    <!-- <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-------------footer---------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logokkn.png">
+                    <p>Our Purpose is to sustainably make the pleasure and benefits
+                        of sports accessible to the many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul class="links">
+                        <li><a href="https://www.instagram.com/kkn148songgon/"
+                                target="_blank">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@story.songgon148?_t=8nNbxhbgEzp&_r=1" target="_blank">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright@KKN148Songgon</p>
+        </div>
+    </div>
+
+    <!-- ---------------------Javascipt For Menu Toggle------------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
